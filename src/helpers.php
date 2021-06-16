@@ -36,6 +36,8 @@ if (!function_exists('human_filesize')) {
      * human filesize.
      *
      * @param $size
+     * @param  int  $precision
+     * @return string
      */
     function human_filesize($size, int $precision = 2): string
     {
