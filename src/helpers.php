@@ -1,12 +1,17 @@
 <?php
 
-if (! function_exists('formatDuration')) {
+/*
+ * This file is part of the jiannei/helpers.
+ *
+ * (c) jiannei <longjian.huang@foxmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
+if (!function_exists('formatDuration')) {
     /**
      * Format duration.
-     *
-     * @param  float  $seconds
-     *
-     * @return string
      */
     function formatDuration(float $seconds): string
     {
@@ -24,19 +29,17 @@ if (! function_exists('formatDuration')) {
 
 if (!function_exists('human_filesize')) {
     /**
-     * human filesize
+     * human filesize.
      *
      * @param $size
-     * @param  int  $precision
-     * @return string
      */
     function human_filesize($size, int $precision = 2): string
     {
-        $units = array('B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB');
+        $units = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
         $i = 0;
         while (($size / 1024) > 0.9) {
             $size /= 1024;
-            $i++;
+            ++$i;
         }
 
         return round($size, $precision).' '.$units[$i];
