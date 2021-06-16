@@ -48,10 +48,9 @@ if (!function_exists('human_filesize')) {
 
 if (!function_exists('str2bool')) {
     /**
-     * Convert string to boolean
+     * Convert string to boolean.
      *
      * @param $str
-     * @return bool
      */
     function str2bool($str): bool
     {
