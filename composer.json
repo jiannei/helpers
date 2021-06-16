@@ -1,0 +1,17 @@
+{
+    "name": "jiannei\/helpers",
+    "description": "Some helper functions.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jiannei",
+            "email": "longjian.huang@foxmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
