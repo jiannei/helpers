@@ -12,10 +12,6 @@
 if (!function_exists('format_duration')) {
     /**
      * Format duration.
-     *
-     * @param  float  $seconds
-     *
-     * @return string
      */
     function format_duration(float $seconds): string
     {
@@ -36,8 +32,6 @@ if (!function_exists('human_filesize')) {
      * human filesize.
      *
      * @param $size
-     * @param  int  $precision
-     * @return string
      */
     function human_filesize($size, int $precision = 2): string
     {
