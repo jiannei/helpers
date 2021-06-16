@@ -46,13 +46,13 @@ if (!function_exists('human_filesize')) {
     }
 }
 
-if (!function_exists('str2bool')) {
+if (!function_exists('strtobool')) {
     /**
      * Convert string to boolean.
      *
      * @param $str
      */
-    function str2bool($str): bool
+    function strtobool($str): bool
     {
         return (bool) json_decode(strtolower($str));
     }
