@@ -9,11 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-if (!function_exists('formatDuration')) {
+if (!function_exists('format_duration')) {
     /**
      * Format duration.
+     *
+     * @param  float  $seconds
+     *
+     * @return string
      */
-    function formatDuration(float $seconds): string
+    function format_duration(float $seconds): string
     {
         if ($seconds < 0.001) {
             return round($seconds * 1000000).'μs';
